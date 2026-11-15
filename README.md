@@ -18,6 +18,7 @@ into the package that a pull request then brings to `main`.
 | | App | Version | By | |
 |---|---|---|---|---|
 | <img src="apps/net.ludei.4x4-evolution/icon.png" width="24" alt=""> | **4x4 Evolution** | 1.0.1 | Terminal Reality, Gathering of Developers | Off-road truck racing by Terminal Reality (2000). Plays from your own CD in an x86 emulator. |
+| <img src="apps/net.ludeku.ares/icon.png" width="24" alt=""> | **Ares** | 1.0.0 | Ludeku | Find, download and share files, play your music and videos, and listen to internet radio, all in one classic app with its own skins and languages. |
 | <img src="apps/net.ludei.beach-head-2002/icon.png" width="24" alt=""> | **Beach Head 2002** | 1.0.1 | Digital Fusion, Infogrames | Hold the beach against waves of tanks, planes and boats (Digital Fusion, 2002). Plays from your own CD in an x86 emulator. |
 | <img src="apps/net.ludei.checkers/icon.svg" width="24" alt=""> | **Checkers** | 1.0.0 | Ludeku | Play checkers against Cass. |
 | <img src="apps/net.lax1dude.eaglercraft/icon.png" width="24" alt=""> | **Eaglercraft 1.8.8** | 1.8.8 | lax1dude | Explore a procedurally generated world with virtually infinite terrain made up of three-dimensional blocks represented as voxels. EaglercraftX 1.8 (WASM-GC build of 10/17/2026). Not affiliated with Mojang or Microsoft. |
