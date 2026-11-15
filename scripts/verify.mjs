@@ -8,7 +8,7 @@ import { createHash } from 'node:crypto';
 import { existsSync, readdirSync, readFileSync, statSync } from 'node:fs';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { CATEGORIES, ID, SDK, VERSION, unzip } from './common.mjs';
+import { CATEGORIES, HOMEPAGE, ID, SDK, SUPPORT, VERSION, unzip } from './common.mjs';
 
 const ROOT = fileURLToPath(new URL('..', import.meta.url));
 const problems = [];
@@ -30,6 +30,8 @@ for (const a of catalog.apps ?? []) {
   if (!VERSION.test(a.version ?? '')) problem(`${where}: bad version`);
   if (a.sdk !== undefined && !SDK.test(a.sdk)) problem(`${where}: bad sdk`);
   if (a.category !== undefined && !CATEGORIES.includes(a.category)) problem(`${where}: unknown category`);
+  if (a.homepage !== undefined && !HOMEPAGE.test(a.homepage)) problem(`${where}: homepage is not https://`);
+  if (a.support !== undefined && !SUPPORT.test(a.support)) problem(`${where}: support is not https:// or mailto:`);
 
   const file = join(ROOT, 'apps', a.id, `${a.id}-${a.version}.app`);
   if (a.package !== `apps/${a.id}/${a.id}-${a.version}.app`) problem(`${where}: package is not apps/<id>/<id>-<version>.app`);
@@ -48,7 +50,7 @@ for (const a of catalog.apps ?? []) {
     problem(`${where}: the package has no readable manifest.json`);
     continue;
   }
-  for (const key of ['id', 'name', 'version', 'description', 'author', 'category', 'sdk'])
+  for (const key of ['id', 'name', 'version', 'description', 'author', 'category', 'sdk', 'homepage', 'support'])
     if (manifest[key] !== a[key]) problem(`${where}: "${key}" differs from the package's manifest`);
   if (manifest.disc?.label !== a.disc) problem(`${where}: "disc" differs from the package's manifest`);
 

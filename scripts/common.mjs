@@ -6,6 +6,9 @@ import { execFileSync } from 'node:child_process';
 export const ID = /^(?=.{1,80}$)[a-z0-9]+(-[a-z0-9]+)*(\.[a-z0-9]+(-[a-z0-9]+)*){2,}$/;
 export const VERSION = /^\d+(\.\d+){0,3}$/;
 export const SDK = /^\d+\.\d+$/;
+/** The publisher's website, and their contact (a page or an address), as Ludei opens them. */
+export const HOMEPAGE = /^https:\/\/\S+$/i;
+export const SUPPORT = /^(https:\/\/\S+|mailto:[^\s@]+@[^\s@]+)$/i;
 export const CATEGORIES = ['accessories', 'games', 'multimedia', 'internet', 'office', 'development', 'system'];
 
 /** Whether version `a` is newer than `b` ("1.10.0" > "1.9.2"). */

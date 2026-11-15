@@ -12,7 +12,7 @@ import { createHash } from 'node:crypto';
 import { copyFileSync, mkdirSync, readFileSync, rmSync, statSync, writeFileSync } from 'node:fs';
 import { basename, extname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { CATEGORIES, ID, SDK, VERSION, isNewer, unzip } from './common.mjs';
+import { CATEGORIES, HOMEPAGE, ID, SDK, SUPPORT, VERSION, isNewer, unzip } from './common.mjs';
 
 const ROOT = fileURLToPath(new URL('..', import.meta.url));
 const CATALOG = join(ROOT, 'catalog.json');
@@ -41,13 +41,15 @@ if (removing) {
 } else {
   for (const pkg of names) {
     const manifest = JSON.parse(unzip(pkg, 'manifest.json'));
-    const { id, name, version, description, author, category, icon, sdk, disc } = manifest;
+    const { id, name, version, description, author, category, icon, sdk, disc, homepage, support } = manifest;
     if (!ID.test(id ?? '')) fail(`${pkg}: the manifest needs an id (lowercase letters, digits, dashes)`);
     if (!name) fail(`${pkg}: the manifest needs a name`);
     if (!VERSION.test(version ?? '')) fail(`${pkg}: the manifest needs a version like 1.0.0`);
     if (sdk !== undefined && !SDK.test(sdk)) fail(`${pkg}: "sdk" must be like "1.0"`);
     if (disc !== undefined && !(disc && typeof disc.label === 'string' && disc.label)) fail(`${pkg}: "disc" needs a label`);
     if (category !== undefined && !CATEGORIES.includes(category)) fail(`${pkg}: unknown category ${category}`);
+    if (homepage !== undefined && !HOMEPAGE.test(homepage)) fail(`${pkg}: "homepage" must be an https:// address`);
+    if (support !== undefined && !SUPPORT.test(support)) fail(`${pkg}: "support" must be an https:// or mailto: address`);
     const previous = catalog.apps.find((a) => a.id === id);
     if (previous && !isNewer(version, previous.version)) fail(`${pkg}: version ${version} is not newer than the published ${previous.version}`);
 
@@ -70,6 +72,9 @@ if (removing) {
       author,
       category,
       sdk,
+      // The publisher's website and how to reach them (the App Catalog's App Tasks).
+      homepage,
+      support,
       // The original disc it plays from (the person brings an .iso of it): its label.
       disc: disc?.label,
       icon: iconUrl,
