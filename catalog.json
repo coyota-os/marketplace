@@ -15,6 +15,19 @@
       "sha256": "3fe3e123d299c2b5000c9def457ef135343b3d88af1edcb396b75824db9cfdb8"
     },
     {
+      "id": "net.ludeku.ares",
+      "name": "Ares",
+      "version": "1.0.0",
+      "description": "Find, download and share files, play your music and videos, and listen to internet radio, all in one classic app with its own skins and languages.",
+      "author": "Ludeku",
+      "category": "internet",
+      "sdk": "1.29",
+      "icon": "apps/net.ludeku.ares/icon.png",
+      "package": "apps/net.ludeku.ares/net.ludeku.ares-1.0.0.app",
+      "bytes": 1298589,
+      "sha256": "6765a572e61d3762be060db730ad568935a0fad4f43dda6acaf36c25e3f9d179"
+    },
+    {
       "id": "net.ludei.beach-head-2002",
       "name": "Beach Head 2002",
       "version": "1.0.1",
