@@ -8,7 +8,7 @@ import { createHash } from 'node:crypto';
 import { existsSync, readdirSync, readFileSync, statSync } from 'node:fs';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { CATEGORIES, HOMEPAGE, ID, SDK, SUPPORT, VERSION, unzip } from './common.mjs';
+import { CATEGORIES, HOMEPAGE, ID, SCREENSHOTS_MAX, SCREENSHOT_FILE, SDK, SUPPORT, VERSION, screenshotProblem, unzip } from './common.mjs';
 
 const ROOT = fileURLToPath(new URL('..', import.meta.url));
 const problems = [];
@@ -53,6 +53,26 @@ for (const a of catalog.apps ?? []) {
   for (const key of ['id', 'name', 'version', 'description', 'author', 'category', 'sdk', 'homepage', 'support'])
     if (manifest[key] !== a[key]) problem(`${where}: "${key}" differs from the package's manifest`);
   if (manifest.disc?.label !== a.disc) problem(`${where}: "disc" differs from the package's manifest`);
+
+  // Its screenshots: the manifest's, in order, each out of the package byte for byte.
+  const wanted = manifest.screenshots ?? [];
+  const listed = a.screenshots ?? [];
+  if (!Array.isArray(wanted) || wanted.length > SCREENSHOTS_MAX) problem(`${where}: more than ${SCREENSHOTS_MAX} screenshots`);
+  else if (wanted.length !== listed.length) problem(`${where}: its screenshots differ from the package's manifest`);
+  else
+    wanted.forEach((shot, i) => {
+      const entry = listed[i];
+      if (!SCREENSHOT_FILE.test(shot?.file ?? '') || entry?.file !== `apps/${a.id}/${shot.file}` || entry.caption !== shot.caption) {
+        problem(`${where}: screenshot ${i + 1} differs from the package's manifest`);
+        return;
+      }
+      const path = join(ROOT, entry.file);
+      if (!existsSync(path)) return problem(`${where}: ${entry.file} is missing`);
+      const bytes = readFileSync(path);
+      if (!bytes.equals(unzip(file, shot.file, 'buffer'))) problem(`${where}: ${entry.file} is not the package's`);
+      const wrong = screenshotProblem(bytes);
+      if (wrong) problem(`${where}: ${entry.file} ${wrong}`);
+    });
 
   if (a.icon !== undefined) {
     const prefix = `apps/${a.id}/`;
