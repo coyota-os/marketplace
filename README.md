@@ -31,6 +31,7 @@ into the package that a pull request then brings to `main`.
 | <img src="apps/net.ludei.paint/icon.svg" width="24" alt=""> | **Paint** | 0.2.0 | Ludeku | Draw, paint and edit pictures. |
 | <img src="apps/net.ludei.pointer/icon.svg" width="24" alt=""> | **Power Pointer** | 0.2.0 | Ludeku | Presentations in PowerPoint XP's way: slides with text, shapes, lines and pictures, transitions, a slide show, Slide Sorter, .pptx files. |
 | <img src="apps/net.ludei.code/icon.png" width="24" alt=""> | **Virtual Space Code** | 1.1.1 | Ludeku | A full code editor (based on Code - OSS) with your files, folders and extensions. |
+| <img src="apps/org.coyota.webengine/icon.svg" width="24" alt=""> | **Web Engine** | 0.1.7 | Ludeku | The engine Classic Internet Explorer uses to display web pages: WebKit compiled to WebAssembly, based on InceptionJS 0.1.7. Installed and kept up to date by Coyota. |
 | <img src="apps/net.ludei.words/icon.svg" width="24" alt=""> | **Words Document** | 0.1.0 | Ludeku | Documents in Word XP's way: fonts, styles and headings, lists, tables, .docx and .txt files. The pages are Univer's. |
 <!-- /apps -->
 

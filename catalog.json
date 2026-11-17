@@ -184,6 +184,18 @@
       "sha256": "990961732a3708a2e5d5092c8b80ae2420faafc819cd43313008bba8dd0be1ba"
     },
     {
+      "id": "org.coyota.webengine",
+      "name": "Web Engine",
+      "version": "0.1.7",
+      "description": "The engine Classic Internet Explorer uses to display web pages: WebKit compiled to WebAssembly, based on InceptionJS 0.1.7. Installed and kept up to date by Coyota.",
+      "author": "Ludeku",
+      "category": "system",
+      "icon": "apps/org.coyota.webengine/icon.svg",
+      "package": "apps/org.coyota.webengine/org.coyota.webengine-0.1.7.app",
+      "bytes": 39037841,
+      "sha256": "f502754b7c3f2d8727eae855b6afd2965f75ee59bfb5270e7ec10bec1d69f54b"
+    },
+    {
       "id": "net.ludei.words",
       "name": "Words Document",
       "version": "0.1.0",
