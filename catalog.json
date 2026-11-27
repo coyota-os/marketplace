@@ -1,7 +1,7 @@
 {
   "apps": [
     {
-      "id": "net.ludei.4x4-evolution",
+      "id": "app.webpc.4x4-evolution",
       "name": "4x4 Evolution",
       "version": "1.0.1",
       "description": "Off-road truck racing by Terminal Reality (2000). Plays from your own CD in an x86 emulator.",
@@ -9,26 +9,26 @@
       "category": "games",
       "sdk": "1.2",
       "disc": "4x4 Evolution",
-      "icon": "apps/net.ludei.4x4-evolution/icon.png",
-      "package": "apps/net.ludei.4x4-evolution/net.ludei.4x4-evolution-1.0.1.app",
-      "bytes": 101775,
-      "sha256": "3fe3e123d299c2b5000c9def457ef135343b3d88af1edcb396b75824db9cfdb8"
+      "icon": "apps/app.webpc.4x4-evolution/icon.png",
+      "package": "apps/app.webpc.4x4-evolution/app.webpc.4x4-evolution-1.0.1.app",
+      "bytes": 101791,
+      "sha256": "59f74806bd88b42b06f09c03f26c73a1ea0fce9be186d05bda5bf61b0fa582c5"
     },
     {
-      "id": "net.ludeku.ares",
+      "id": "app.webpc.ares",
       "name": "Ares",
       "version": "1.0.0",
       "description": "Find, download and share files, play your music and videos, and listen to internet radio, all in one classic app with its own skins and languages.",
-      "author": "Ludeku",
+      "author": "WebPC",
       "category": "internet",
       "sdk": "1.29",
-      "icon": "apps/net.ludeku.ares/icon.png",
-      "package": "apps/net.ludeku.ares/net.ludeku.ares-1.0.0.app",
-      "bytes": 1298589,
-      "sha256": "6765a572e61d3762be060db730ad568935a0fad4f43dda6acaf36c25e3f9d179"
+      "icon": "apps/app.webpc.ares/icon.png",
+      "package": "apps/app.webpc.ares/app.webpc.ares-1.0.0.app",
+      "bytes": 1298867,
+      "sha256": "6f322e7e3899a4730af333241542759dfb67962cbe61cdc2c1d1ec888477b1d2"
     },
     {
-      "id": "net.ludei.beach-head-2002",
+      "id": "app.webpc.beach-head-2002",
       "name": "Beach Head 2002",
       "version": "1.0.1",
       "description": "Hold the beach against waves of tanks, planes and boats (Digital Fusion, 2002). Plays from your own CD in an x86 emulator.",
@@ -36,23 +36,23 @@
       "category": "games",
       "sdk": "1.2",
       "disc": "Beach Head 2002",
-      "icon": "apps/net.ludei.beach-head-2002/icon.png",
-      "package": "apps/net.ludei.beach-head-2002/net.ludei.beach-head-2002-1.0.1.app",
-      "bytes": 100229,
-      "sha256": "465e373a5f74e7f9234fbd1eec48c486f782235407d174383a987eb3172ec655"
+      "icon": "apps/app.webpc.beach-head-2002/icon.png",
+      "package": "apps/app.webpc.beach-head-2002/app.webpc.beach-head-2002-1.0.1.app",
+      "bytes": 100245,
+      "sha256": "5f85ac5ca8561937d27aa02e931b2150af101e0dc67aaa60394f92803d044f47"
     },
     {
-      "id": "net.ludei.checkers",
+      "id": "app.webpc.checkers",
       "name": "Checkers",
       "version": "1.0.0",
       "description": "Play checkers against Cass.",
-      "author": "Ludeku",
+      "author": "WebPC",
       "category": "games",
       "sdk": "1.0",
-      "icon": "apps/net.ludei.checkers/icon.svg",
-      "package": "apps/net.ludei.checkers/net.ludei.checkers-1.0.0.app",
+      "icon": "apps/app.webpc.checkers/icon.svg",
+      "package": "apps/app.webpc.checkers/app.webpc.checkers-1.0.0.app",
       "bytes": 12311,
-      "sha256": "bdfc806c0007dc57528bd0d7c0d1bef46bcdd0668ece678103f69d1ef1d14050"
+      "sha256": "225c7be9a959066890a138b070d9c70806fb57414b920fafc0bec0ee40866220"
     },
     {
       "id": "net.lax1dude.eaglercraft",
@@ -68,59 +68,59 @@
       "sha256": "113bc36fb75fe4fcae50af025c98f871c472dfdc0c0bd9435acaa25e1cbd7ba7"
     },
     {
-      "id": "net.ludei.spreadsheet",
+      "id": "app.webpc.spreadsheet",
       "name": "Excellent Sheet",
       "version": "0.1.1",
       "description": "Workbooks in Excel XP's way: formulas, formatting, several sheets, .xlsx and .csv files. The grid is Univer's.",
-      "author": "Ludeku",
+      "author": "WebPC",
       "category": "office",
       "sdk": "1.5",
-      "icon": "apps/net.ludei.spreadsheet/icon.svg",
-      "package": "apps/net.ludei.spreadsheet/net.ludei.spreadsheet-0.1.1.app",
-      "bytes": 2138221,
-      "sha256": "1a3e5b32225cf2532c2393ade4cdefb4abd92d8a6df3e3c36eb95cd2f2b72a36"
+      "icon": "apps/app.webpc.spreadsheet/icon.svg",
+      "package": "apps/app.webpc.spreadsheet/app.webpc.spreadsheet-0.1.1.app",
+      "bytes": 2138477,
+      "sha256": "497c00a94c2c116908e670d720e4128ae3e76c75e36e84f0d36ed0f7be7eddd2"
     },
     {
-      "id": "net.ludei.msgr",
+      "id": "app.webpc.msgr",
       "name": "Live Chat Messenger",
       "version": "1.0.1",
       "description": "A chat messenger in the style of Windows Live Messenger 2009 that works with WhatsApp. Unofficial client: WhatsApp may restrict or ban accounts linked to unofficial apps; use it at your own risk. Messages go straight between this computer and WhatsApp, through no server of ours. Not affiliated with WhatsApp LLC or Meta Platforms, Inc.",
-      "author": "Ludeku",
+      "author": "WebPC",
       "category": "internet",
       "sdk": "1.21",
-      "icon": "apps/net.ludei.msgr/icon.png",
-      "package": "apps/net.ludei.msgr/net.ludei.msgr-1.0.1.app",
-      "bytes": 2212561,
-      "sha256": "773daf3da0426f8172104b8d07579c10c02ca28ca3e93bdff002c38086d21d21"
+      "icon": "apps/app.webpc.msgr/icon.png",
+      "package": "apps/app.webpc.msgr/app.webpc.msgr-1.0.1.app",
+      "bytes": 2212632,
+      "sha256": "3fafaf048b8db18e164ad285848234562cfff919713b4f283bf0bc5ab2815b8a"
     },
     {
-      "id": "net.ludei.mugen",
+      "id": "app.webpc.mugen",
       "name": "M.U.G.E.N",
       "version": "0.1.2",
       "description": "Plays your own MUGEN characters and stages (in App Files/M.U.G.E.N/game), with mugen-js. No game data included. Not affiliated with Elecbyte.",
-      "author": "Ludeku",
+      "author": "WebPC",
       "category": "games",
       "sdk": "1.0",
-      "icon": "apps/net.ludei.mugen/icon.png",
-      "package": "apps/net.ludei.mugen/net.ludei.mugen-0.1.2.app",
-      "bytes": 191213,
-      "sha256": "7cb156ff47706c701e5a0c60f71a674494b8c064dc30e07ea6be998b8c9dee8e"
+      "icon": "apps/app.webpc.mugen/icon.png",
+      "package": "apps/app.webpc.mugen/app.webpc.mugen-0.1.2.app",
+      "bytes": 191295,
+      "sha256": "d0823df0429dc8af4c5ded288396a0b54b7d0708e5bfecd66d5551ccac0c4773"
     },
     {
-      "id": "net.ludeku.player",
+      "id": "app.webpc.player",
       "name": "Media Player",
       "version": "0.1.4",
       "description": "Play music and video, organize your playlists and enjoy your media files with a classic, smooth design.",
-      "author": "Ludeku",
+      "author": "WebPC",
       "category": "multimedia",
       "sdk": "1.23",
-      "icon": "apps/net.ludeku.player/icon.png",
-      "package": "apps/net.ludeku.player/net.ludeku.player-0.1.4.app",
-      "bytes": 292362,
-      "sha256": "c16644f779080370a26c626a77ccc5530a1f42c539aff92546db6fa3e1b0066a"
+      "icon": "apps/app.webpc.player/icon.png",
+      "package": "apps/app.webpc.player/app.webpc.player-0.1.4.app",
+      "bytes": 292390,
+      "sha256": "822b1d53f1abb356621fb2527508b47027c0cf73e2503e4ac8fd281ba1f935c3"
     },
     {
-      "id": "net.ludei.monster-truck-madness-2",
+      "id": "app.webpc.monster-truck-madness-2",
       "name": "Monster Truck Madness 2",
       "version": "1.0.1",
       "description": "Monster truck racing and stunts by Terminal Reality (Microsoft, 1998). Plays from your own CD in an x86 emulator.",
@@ -128,10 +128,10 @@
       "category": "games",
       "sdk": "1.2",
       "disc": "Monster Truck Madness 2",
-      "icon": "apps/net.ludei.monster-truck-madness-2/icon.png",
-      "package": "apps/net.ludei.monster-truck-madness-2/net.ludei.monster-truck-madness-2-1.0.1.app",
-      "bytes": 102080,
-      "sha256": "fb1c9c72a4a20bc95d21a995422a63543f1240626d413940920d8cf2c4af4785"
+      "icon": "apps/app.webpc.monster-truck-madness-2/icon.png",
+      "package": "apps/app.webpc.monster-truck-madness-2/app.webpc.monster-truck-madness-2-1.0.1.app",
+      "bytes": 102096,
+      "sha256": "f8e86bc423782722cec369dcc2a7cdcf0e785a8cf07b9f4865e0a838cda76340"
     },
     {
       "id": "org.nodejs.node22",
@@ -145,68 +145,68 @@
       "sha256": "f9445056395450ee47b726b3c560638c27a0dd4032b342b04fea83c457f828ab"
     },
     {
-      "id": "net.ludei.paint",
+      "id": "app.webpc.paint",
       "name": "Paint",
       "version": "0.2.0",
       "description": "Draw, paint and edit pictures.",
-      "author": "Ludeku",
+      "author": "WebPC",
       "category": "accessories",
       "sdk": "1.0",
-      "icon": "apps/net.ludei.paint/icon.svg",
-      "package": "apps/net.ludei.paint/net.ludei.paint-0.2.0.app",
-      "bytes": 229976,
-      "sha256": "30fa6ba4799324622526bfcb07ce1cec15fb0beb4751b30160369a121f3a82e7"
+      "icon": "apps/app.webpc.paint/icon.svg",
+      "package": "apps/app.webpc.paint/app.webpc.paint-0.2.0.app",
+      "bytes": 230532,
+      "sha256": "ddc95ae0d4a7c1127e3a79716ad457d12b43846f34959dbae77f9f87126f53e4"
     },
     {
-      "id": "net.ludei.pointer",
+      "id": "app.webpc.pointer",
       "name": "Power Pointer",
       "version": "0.2.0",
       "description": "Presentations in PowerPoint XP's way: slides with text, shapes, lines and pictures, transitions, a slide show, Slide Sorter, .pptx files.",
-      "author": "Ludeku",
+      "author": "WebPC",
       "category": "office",
       "sdk": "1.5",
-      "icon": "apps/net.ludei.pointer/icon.svg",
-      "package": "apps/net.ludei.pointer/net.ludei.pointer-0.2.0.app",
-      "bytes": 650648,
-      "sha256": "e1b54a07ea8f72e0c409f1b4c81bf8b037246bc8f5c46411fe0ca003e32bf06b"
+      "icon": "apps/app.webpc.pointer/icon.svg",
+      "package": "apps/app.webpc.pointer/app.webpc.pointer-0.2.0.app",
+      "bytes": 650703,
+      "sha256": "a85f2689966b929916533ad4c80aea17d4c4053a2501b89f7e6e4b2a430c19f7"
     },
     {
-      "id": "net.ludei.code",
+      "id": "app.webpc.code",
       "name": "Virtual Space Code",
       "version": "1.1.1",
       "description": "A full code editor (based on Code - OSS) with your files, folders and extensions.",
-      "author": "Ludeku",
+      "author": "WebPC",
       "category": "development",
       "sdk": "1.3",
-      "icon": "apps/net.ludei.code/icon.png",
-      "package": "apps/net.ludei.code/net.ludei.code-1.1.1.app",
-      "bytes": 24801739,
-      "sha256": "990961732a3708a2e5d5092c8b80ae2420faafc819cd43313008bba8dd0be1ba"
+      "icon": "apps/app.webpc.code/icon.png",
+      "package": "apps/app.webpc.code/app.webpc.code-1.1.1.app",
+      "bytes": 24807714,
+      "sha256": "51ab91bd351ebb7fa391a3dee69bfcfbb4ba0e179c570b6adcc1890673abf461"
     },
     {
-      "id": "org.coyota.webengine",
+      "id": "app.webpc.webengine",
       "name": "Web Engine",
       "version": "0.1.7",
       "description": "The engine Classic Internet Explorer uses to display web pages: WebKit compiled to WebAssembly, based on InceptionJS 0.1.7. Installed and kept up to date by Coyota.",
-      "author": "Ludeku",
+      "author": "WebPC",
       "category": "system",
-      "icon": "apps/org.coyota.webengine/icon.svg",
-      "package": "apps/org.coyota.webengine/org.coyota.webengine-0.1.7.app",
-      "bytes": 39037841,
-      "sha256": "f502754b7c3f2d8727eae855b6afd2965f75ee59bfb5270e7ec10bec1d69f54b"
+      "icon": "apps/app.webpc.webengine/icon.svg",
+      "package": "apps/app.webpc.webengine/app.webpc.webengine-0.1.7.app",
+      "bytes": 39044473,
+      "sha256": "c4d4a929ca2b059bf8a26c6ae0f62adace0c154d614f24bbdd672af05264c727"
     },
     {
-      "id": "net.ludei.words",
+      "id": "app.webpc.words",
       "name": "Words Document",
       "version": "0.1.0",
       "description": "Documents in Word XP's way: fonts, styles and headings, lists, tables, .docx and .txt files. The pages are Univer's.",
-      "author": "Ludeku",
+      "author": "WebPC",
       "category": "office",
       "sdk": "1.5",
-      "icon": "apps/net.ludei.words/icon.svg",
-      "package": "apps/net.ludei.words/net.ludei.words-0.1.0.app",
-      "bytes": 1594069,
-      "sha256": "5da90539d24105d6812b5d54ee3031f1829935b0519ee281388e02281cf7b1bd"
+      "icon": "apps/app.webpc.words/icon.svg",
+      "package": "apps/app.webpc.words/app.webpc.words-0.1.0.app",
+      "bytes": 1594250,
+      "sha256": "2aa6dad45ed130ab28583f60946ce369621932f63282ce6243a9864c71856bf2"
     }
   ]
 }

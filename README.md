@@ -17,22 +17,22 @@ into the package that a pull request then brings to `main`.
 <!-- apps -->
 | | App | Version | By | |
 |---|---|---|---|---|
-| <img src="apps/net.ludei.4x4-evolution/icon.png" width="24" alt=""> | **4x4 Evolution** | 1.0.1 | Terminal Reality, Gathering of Developers | Off-road truck racing by Terminal Reality (2000). Plays from your own CD in an x86 emulator. |
-| <img src="apps/net.ludeku.ares/icon.png" width="24" alt=""> | **Ares** | 1.0.0 | Ludeku | Find, download and share files, play your music and videos, and listen to internet radio, all in one classic app with its own skins and languages. |
-| <img src="apps/net.ludei.beach-head-2002/icon.png" width="24" alt=""> | **Beach Head 2002** | 1.0.1 | Digital Fusion, Infogrames | Hold the beach against waves of tanks, planes and boats (Digital Fusion, 2002). Plays from your own CD in an x86 emulator. |
-| <img src="apps/net.ludei.checkers/icon.svg" width="24" alt=""> | **Checkers** | 1.0.0 | Ludeku | Play checkers against Cass. |
+| <img src="apps/app.webpc.4x4-evolution/icon.png" width="24" alt=""> | **4x4 Evolution** | 1.0.1 | Terminal Reality, Gathering of Developers | Off-road truck racing by Terminal Reality (2000). Plays from your own CD in an x86 emulator. |
+| <img src="apps/app.webpc.ares/icon.png" width="24" alt=""> | **Ares** | 1.0.0 | WebPC | Find, download and share files, play your music and videos, and listen to internet radio, all in one classic app with its own skins and languages. |
+| <img src="apps/app.webpc.beach-head-2002/icon.png" width="24" alt=""> | **Beach Head 2002** | 1.0.1 | Digital Fusion, Infogrames | Hold the beach against waves of tanks, planes and boats (Digital Fusion, 2002). Plays from your own CD in an x86 emulator. |
+| <img src="apps/app.webpc.checkers/icon.svg" width="24" alt=""> | **Checkers** | 1.0.0 | WebPC | Play checkers against Cass. |
 | <img src="apps/net.lax1dude.eaglercraft/icon.png" width="24" alt=""> | **Eaglercraft 1.8.8** | 1.8.8 | lax1dude | Explore a procedurally generated world with virtually infinite terrain made up of three-dimensional blocks represented as voxels. EaglercraftX 1.8 (WASM-GC build of 10/17/2026). Not affiliated with Mojang or Microsoft. |
-| <img src="apps/net.ludei.spreadsheet/icon.svg" width="24" alt=""> | **Excellent Sheet** | 0.1.1 | Ludeku | Workbooks in Excel XP's way: formulas, formatting, several sheets, .xlsx and .csv files. The grid is Univer's. |
-| <img src="apps/net.ludei.msgr/icon.png" width="24" alt=""> | **Live Chat Messenger** | 1.0.1 | Ludeku | A chat messenger in the style of Windows Live Messenger 2009 that works with WhatsApp. Unofficial client: WhatsApp may restrict or ban accounts linked to unofficial apps; use it at your own risk. Messages go straight between this computer and WhatsApp, through no server of ours. Not affiliated with WhatsApp LLC or Meta Platforms, Inc. |
-| <img src="apps/net.ludei.mugen/icon.png" width="24" alt=""> | **M.U.G.E.N** | 0.1.2 | Ludeku | Plays your own MUGEN characters and stages (in App Files/M.U.G.E.N/game), with mugen-js. No game data included. Not affiliated with Elecbyte. |
-| <img src="apps/net.ludeku.player/icon.png" width="24" alt=""> | **Media Player** | 0.1.4 | Ludeku | Play music and video, organize your playlists and enjoy your media files with a classic, smooth design. |
-| <img src="apps/net.ludei.monster-truck-madness-2/icon.png" width="24" alt=""> | **Monster Truck Madness 2** | 1.0.1 | Terminal Reality, Microsoft | Monster truck racing and stunts by Terminal Reality (Microsoft, 1998). Plays from your own CD in an x86 emulator. |
+| <img src="apps/app.webpc.spreadsheet/icon.svg" width="24" alt=""> | **Excellent Sheet** | 0.1.1 | WebPC | Workbooks in Excel XP's way: formulas, formatting, several sheets, .xlsx and .csv files. The grid is Univer's. |
+| <img src="apps/app.webpc.msgr/icon.png" width="24" alt=""> | **Live Chat Messenger** | 1.0.1 | WebPC | A chat messenger in the style of Windows Live Messenger 2009 that works with WhatsApp. Unofficial client: WhatsApp may restrict or ban accounts linked to unofficial apps; use it at your own risk. Messages go straight between this computer and WhatsApp, through no server of ours. Not affiliated with WhatsApp LLC or Meta Platforms, Inc. |
+| <img src="apps/app.webpc.mugen/icon.png" width="24" alt=""> | **M.U.G.E.N** | 0.1.2 | WebPC | Plays your own MUGEN characters and stages (in App Files/M.U.G.E.N/game), with mugen-js. No game data included. Not affiliated with Elecbyte. |
+| <img src="apps/app.webpc.player/icon.png" width="24" alt=""> | **Media Player** | 0.1.4 | WebPC | Play music and video, organize your playlists and enjoy your media files with a classic, smooth design. |
+| <img src="apps/app.webpc.monster-truck-madness-2/icon.png" width="24" alt=""> | **Monster Truck Madness 2** | 1.0.1 | Terminal Reality, Microsoft | Monster truck racing and stunts by Terminal Reality (Microsoft, 1998). Plays from your own CD in an x86 emulator. |
 | <img src="apps/org.nodejs.node22/icon.svg" width="24" alt=""> | **Node.js 22** | 22.23.5.1 | Node.js | Shared Node.js runtime for Ludei apps. |
-| <img src="apps/net.ludei.paint/icon.svg" width="24" alt=""> | **Paint** | 0.2.0 | Ludeku | Draw, paint and edit pictures. |
-| <img src="apps/net.ludei.pointer/icon.svg" width="24" alt=""> | **Power Pointer** | 0.2.0 | Ludeku | Presentations in PowerPoint XP's way: slides with text, shapes, lines and pictures, transitions, a slide show, Slide Sorter, .pptx files. |
-| <img src="apps/net.ludei.code/icon.png" width="24" alt=""> | **Virtual Space Code** | 1.1.1 | Ludeku | A full code editor (based on Code - OSS) with your files, folders and extensions. |
-| <img src="apps/org.coyota.webengine/icon.svg" width="24" alt=""> | **Web Engine** | 0.1.7 | Ludeku | The engine Classic Internet Explorer uses to display web pages: WebKit compiled to WebAssembly, based on InceptionJS 0.1.7. Installed and kept up to date by Coyota. |
-| <img src="apps/net.ludei.words/icon.svg" width="24" alt=""> | **Words Document** | 0.1.0 | Ludeku | Documents in Word XP's way: fonts, styles and headings, lists, tables, .docx and .txt files. The pages are Univer's. |
+| <img src="apps/app.webpc.paint/icon.svg" width="24" alt=""> | **Paint** | 0.2.0 | WebPC | Draw, paint and edit pictures. |
+| <img src="apps/app.webpc.pointer/icon.svg" width="24" alt=""> | **Power Pointer** | 0.2.0 | WebPC | Presentations in PowerPoint XP's way: slides with text, shapes, lines and pictures, transitions, a slide show, Slide Sorter, .pptx files. |
+| <img src="apps/app.webpc.code/icon.png" width="24" alt=""> | **Virtual Space Code** | 1.1.1 | WebPC | A full code editor (based on Code - OSS) with your files, folders and extensions. |
+| <img src="apps/app.webpc.webengine/icon.svg" width="24" alt=""> | **Web Engine** | 0.1.7 | WebPC | The engine Classic Internet Explorer uses to display web pages: WebKit compiled to WebAssembly, based on InceptionJS 0.1.7. Installed and kept up to date by Coyota. |
+| <img src="apps/app.webpc.words/icon.svg" width="24" alt=""> | **Words Document** | 0.1.0 | WebPC | Documents in Word XP's way: fonts, styles and headings, lists, tables, .docx and .txt files. The pages are Univer's. |
 <!-- /apps -->
 
 ## Publishing an app
