@@ -202,11 +202,11 @@
       "description": "The classic Winamp 2 player, rebuilt for the web: play your music and internet streams, build playlists, tune the equalizer, change skins and watch Milkdrop visualizations.",
       "author": "Webamp (Jordan Eldredge)",
       "category": "multimedia",
-      "sdk": "1.36",
+      "sdk": "1.37",
       "icon": "apps/org.webamp.player/icon.svg",
       "package": "apps/org.webamp.player/org.webamp.player-1.0.0.app",
-      "bytes": 412695,
-      "sha256": "00da27770374cd9cb8f63c15c5a976d96dbda52fb9b0b357ec235a6f5fdebb97"
+      "bytes": 410485,
+      "sha256": "65f22aa0224bdc7a4e247aae6b47e7b217b514df536c40fbaf738ae61a982f99"
     },
     {
       "id": "app.webpc.words",
