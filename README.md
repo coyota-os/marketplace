@@ -32,6 +32,7 @@ into the package that a pull request then brings to `main`.
 | <img src="apps/app.webpc.pointer/icon.svg" width="24" alt=""> | **Power Pointer** | 0.2.0 | WebPC | Presentations in PowerPoint XP's way: slides with text, shapes, lines and pictures, transitions, a slide show, Slide Sorter, .pptx files. |
 | <img src="apps/app.webpc.code/icon.png" width="24" alt=""> | **Virtual Space Code** | 1.1.1 | WebPC | A full code editor (based on Code - OSS) with your files, folders and extensions. |
 | <img src="apps/app.webpc.webengine/icon.svg" width="24" alt=""> | **Web Engine** | 0.1.7 | WebPC | The engine Classic Internet Explorer uses to display web pages: WebKit compiled to WebAssembly, based on InceptionJS 0.1.7. Installed and kept up to date by Coyota. |
+| <img src="apps/org.webamp.player/icon.svg" width="24" alt=""> | **Webamp** | 1.0.0 | Webamp (Jordan Eldredge) | The classic Winamp 2 player, rebuilt for the web: play your music and internet streams, build playlists, tune the equalizer, change skins and watch Milkdrop visualizations. |
 | <img src="apps/app.webpc.words/icon.svg" width="24" alt=""> | **Words Document** | 0.1.0 | WebPC | Documents in Word XP's way: fonts, styles and headings, lists, tables, .docx and .txt files. The pages are Univer's. |
 <!-- /apps -->
 

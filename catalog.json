@@ -196,6 +196,19 @@
       "sha256": "c4d4a929ca2b059bf8a26c6ae0f62adace0c154d614f24bbdd672af05264c727"
     },
     {
+      "id": "org.webamp.player",
+      "name": "Webamp",
+      "version": "1.0.0",
+      "description": "The classic Winamp 2 player, rebuilt for the web: play your music and internet streams, build playlists, tune the equalizer, change skins and watch Milkdrop visualizations.",
+      "author": "Webamp (Jordan Eldredge)",
+      "category": "multimedia",
+      "sdk": "1.36",
+      "icon": "apps/org.webamp.player/icon.svg",
+      "package": "apps/org.webamp.player/org.webamp.player-1.0.0.app",
+      "bytes": 412695,
+      "sha256": "00da27770374cd9cb8f63c15c5a976d96dbda52fb9b0b357ec235a6f5fdebb97"
+    },
+    {
       "id": "app.webpc.words",
       "name": "Words Document",
       "version": "0.1.0",
