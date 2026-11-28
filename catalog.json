@@ -17,15 +17,15 @@
     {
       "id": "app.webpc.ares",
       "name": "Ares",
-      "version": "1.0.0",
+      "version": "1.0.0.1",
       "description": "Find, download and share files, play your music and videos, and listen to internet radio, all in one classic app with its own skins and languages.",
       "author": "WebPC",
       "category": "internet",
       "sdk": "1.29",
       "icon": "apps/app.webpc.ares/icon.png",
-      "package": "apps/app.webpc.ares/app.webpc.ares-1.0.0.app",
-      "bytes": 1298867,
-      "sha256": "6f322e7e3899a4730af333241542759dfb67962cbe61cdc2c1d1ec888477b1d2"
+      "package": "apps/app.webpc.ares/app.webpc.ares-1.0.0.1.app",
+      "bytes": 1298884,
+      "sha256": "ddd512a2e0175963206222fd4ee937aacb212222cf6af9067256e84aec9a6ab5"
     },
     {
       "id": "app.webpc.beach-head-2002",
@@ -83,15 +83,15 @@
     {
       "id": "app.webpc.msgr",
       "name": "Live Chat Messenger",
-      "version": "1.0.2",
+      "version": "1.0.3",
       "description": "Chat with your friends on WhatsApp from a classic messenger: a contact list, conversations, emoticons, display pictures and notifications. Messages travel directly between this computer and WhatsApp. Unofficial client: WhatsApp may restrict accounts linked to unofficial apps. Not affiliated with WhatsApp or Meta.",
       "author": "WebPC",
       "category": "internet",
       "sdk": "1.21",
       "icon": "apps/app.webpc.msgr/icon.png",
-      "package": "apps/app.webpc.msgr/app.webpc.msgr-1.0.2.app",
-      "bytes": 2212613,
-      "sha256": "e33e7bb60f029db781f19aed38006e4d3d9cd6f68ba35dcbaa370bb05dbafe4b"
+      "package": "apps/app.webpc.msgr/app.webpc.msgr-1.0.3.app",
+      "bytes": 2212629,
+      "sha256": "d5032dedbceed76a24fd7441602ff0ee49154b92b8d8a29d817e28c521e1947f"
     },
     {
       "id": "app.webpc.mugen",
