@@ -4,7 +4,7 @@ import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 
 /** Where approved packages live: the repository's main branch, served raw. */
-/** A reverse domain and a name (net.ludei.checkers), as Kino's agentd checks it. */
+/** A reverse domain and a name (app.webpc.checkers), as WebPC's agentd checks it. */
 export const ID = /^(?=.{1,80}$)[a-z0-9]+(-[a-z0-9]+)*(\.[a-z0-9]+(-[a-z0-9]+)*){2,}$/;
 export const VERSION = /^\d+(\.\d+){0,3}$/;
 export const SDK = /^\d+\.\d+$/;

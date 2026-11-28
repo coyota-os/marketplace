@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-// Checks the Marketplace as Cassiel will read it (and as a pull request must leave it):
+// Checks the App Catalog as WebPC will read it (and as a pull request must leave it):
 // every catalog entry matches the package it names, byte for byte (SHA-256 and size),
-// the manifest inside agrees with the entry, links point where Cassiel builds them, and
+// the manifest inside agrees with the entry, links point where WebPC builds them, and
 // nothing in apps/ is left out of the catalog. Exits 1 on any problem.
 //   node scripts/verify.mjs
 import { createHash } from 'node:crypto';

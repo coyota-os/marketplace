@@ -1,13 +1,13 @@
 #!/usr/bin/env node
-// Adds an app to the Marketplace, or a newer version of it: copies its .app into
+// Adds an app to the App Catalog, or a newer version of it: copies its .app into
 // apps/<id>/<id>-<version>.app (a new name per version, so a cached catalog never
 // points at a package that changed), takes its icon out of the package, writes its
 // entry in catalog.json from the package's own manifest (so the catalog never disagrees
 // with what installs) with the package's SHA-256, and lists the apps in README.md.
-// Cassiel builds every link from the id and version on the main branch: what is merged
+// WebPC builds every link from the id and version on the main branch: what is merged
 // there is what is approved, and it installs nothing else.
 //   node scripts/publish.mjs path/to/app.app [more.app ...]
-//   node scripts/publish.mjs --remove <id> [...]       takes apps out of the Marketplace
+//   node scripts/publish.mjs --remove <id> [...]       takes apps out of the App Catalog
 import { createHash } from 'node:crypto';
 import { copyFileSync, mkdirSync, readFileSync, rmSync, statSync, writeFileSync } from 'node:fs';
 import { basename, extname, join } from 'node:path';

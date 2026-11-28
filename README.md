@@ -1,15 +1,15 @@
-# Cassiel Marketplace
+# WebPC App Catalog
 
-The apps Cassiel's Marketplace offers. Cassiel reads [`catalog.json`](catalog.json)
+The apps WebPC's App Catalog offers. WebPC reads [`catalog.json`](catalog.json)
 straight from this repository and installs an app by downloading its `.app` package
 from here; the Setup wizard shows what the app may do before it is installed.
 
 **Only what is on `main` is approved.** Every entry points at the package on the main
-branch and carries its SHA-256: Cassiel lists only entries from here and refuses a
+branch and carries its SHA-256: WebPC lists only entries from here and refuses a
 download that is not byte for byte the approved package.
 
 **Branches.** `main` holds only what is published: the catalog and the packages. Each
-app's source is a branch named after its id (`net.ludei.paint`), where it is built
+app's source is a branch named after its id (`app.webpc.paint`), where it is built
 into the package that a pull request then brings to `main`.
 
 ## Apps
@@ -39,8 +39,8 @@ into the package that a pull request then brings to `main`.
 ## Publishing an app
 
 1. Keep the app's source in its own branch here, named after its id. Build the package
-   from it (see Cassiel's `docs/app-sdk.md`): `scripts/pack-app.sh path/to/app` in the
-   Cassiel repo makes `build/<id>.app`.
+   from it (see WebPC's `docs/app-sdk.md`): `scripts/pack-app.sh path/to/app` in the
+   WebPC repo makes `build/<id>.app`.
 2. Here: `node scripts/publish.mjs path/to/<id>.app`. It checks the manifest (`id`,
    `name`, a `version` newer than the published one, `sdk`, `category`), copies the
    package to `apps/<id>/<id>-<version>.app`, takes out its icon, writes the catalog
@@ -48,10 +48,15 @@ into the package that a pull request then brings to `main`.
 3. `node scripts/verify.mjs` checks that every entry matches its package byte for byte.
    It runs on every pull request too (GitHub Actions).
 4. Open a pull request. The maintainer reviews every app and is the only one who
-   merges into `main`; once merged, the app is in the Marketplace.
+   merges into `main`; once merged, the app is in the App Catalog.
 
 An app's id is a reverse domain of its maker plus its name (`com.example.paint`); an app
 is only published under a domain that belongs to whoever makes it.
+
+**Verified publishers** ([`publishers.json`](publishers.json)): the App Catalog shows the
+verified badge only on apps whose id is under a verified publisher's domain, and no other
+app may use that publisher's name as its author (`verify.mjs`). The list, the scripts and
+the apps under `webpc.app` are WebPC's to approve (CODEOWNERS).
 
 `node scripts/publish.mjs --remove <id>` takes an app out.
 
@@ -65,6 +70,7 @@ catalog.json                    { "apps": [ { id, name, version, description, au
                                   category, sdk, icon, package, bytes, sha256 } ] }
 apps/<id>/<id>-<version>.app   the package
 apps/<id>/icon.svg              its icon (or icon.png)
+publishers.json                 { "publishers": [ { domain, name, github } ] }
 scripts/                        publish.mjs, verify.mjs
 ```
 
