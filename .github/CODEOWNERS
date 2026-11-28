@@ -1,0 +1,7 @@
+# What only WebPC may change: the verified publishers, and the apps under WebPC's own domain
+# (app.webpc.*). With branch protection's "Require review from Code Owners", a pull request
+# touching these cannot be merged without that review.
+/publishers.json @yojona
+/.github/ @yojona
+/scripts/ @yojona
+/apps/app.webpc.*/ @yojona
