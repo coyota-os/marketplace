@@ -205,8 +205,8 @@
       "sdk": "1.37",
       "icon": "apps/org.webamp.player/icon.png",
       "package": "apps/org.webamp.player/org.webamp.player-1.0.0.app",
-      "bytes": 624351,
-      "sha256": "f7f99bb79980439d06aaf9567f7bfdb38cb5a35df6e8dd2320079df478907dd5"
+      "bytes": 624271,
+      "sha256": "41b45c89e795e5d166c8cbd2ae372891e14bd208c7da0cd021b3dedd90ba4ff7"
     },
     {
       "id": "app.webpc.words",
