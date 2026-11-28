@@ -1,0 +1,5 @@
+{
+  "publishers": [
+    { "domain": "webpc.app", "name": "WebPC", "github": "yojona" }
+  ]
+}
