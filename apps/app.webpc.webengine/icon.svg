@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="sea" cx="40%" cy="32%" r="70%">
+      <stop offset="0" stop-color="#8fd3ff"/>
+      <stop offset=".6" stop-color="#2f8be0"/>
+      <stop offset="1" stop-color="#1b4fa8"/>
+    </radialGradient>
+    <linearGradient id="gear" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f4f4f4"/>
+      <stop offset="1" stop-color="#9aa3ad"/>
+    </linearGradient>
+  </defs>
+  <circle cx="28" cy="28" r="23" fill="url(#sea)" stroke="#16438f" stroke-width="1.5"/>
+  <path d="M15 17c5 1 7 5 11 5s4 5 1 7-6 1-7 5 2 8-1 10c-6-3-10-9-10-17 0-4 2-7 6-10zm19-9c4 2 3 5 6 6s5 3 4 6-5 2-7 0-6-1-6-5 2-4 3-7z" fill="#5fbf54" stroke="#2e7d32" stroke-width="1"/>
+  <g transform="translate(46 46)">
+    <path d="M-2.5-15h5l1 4 3.5 1.5 3.5-2.2 3.5 3.5-2.2 3.5L13-2.5l4 1v5l-4 1-1.5 3.5 2.2 3.5-3.5 3.5-3.5-2.2L3.5 14l-1 4h-5l-1-4L-7 12.5l-3.5 2.2-3.5-3.5 2.2-3.5L-13 4.5l-4-1v-5l4-1 1.5-3.5-2.2-3.5 3.5-3.5 3.5 2.2L-3.5-11z" fill="url(#gear)" stroke="#5b636c" stroke-width="1.2"/>
+    <circle r="4.5" fill="#fff" stroke="#5b636c" stroke-width="1.2"/>
+  </g>
+</svg>

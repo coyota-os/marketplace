@@ -1,14 +1,14 @@
 #!/usr/bin/env node
-// Checks the Marketplace as Cassiel will read it (and as a pull request must leave it):
+// Checks the App Catalog as WebPC will read it (and as a pull request must leave it):
 // every catalog entry matches the package it names, byte for byte (SHA-256 and size),
-// the manifest inside agrees with the entry, links point where Cassiel builds them, and
+// the manifest inside agrees with the entry, links point where WebPC builds them, and
 // nothing in apps/ is left out of the catalog. Exits 1 on any problem.
 //   node scripts/verify.mjs
 import { createHash } from 'node:crypto';
 import { existsSync, readdirSync, readFileSync, statSync } from 'node:fs';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { CATEGORIES, ID, SDK, VERSION, unzip } from './common.mjs';
+import { CATEGORIES, ID, SDK, VERSION, isUnder, readPublishers, unzip } from './common.mjs';
 
 const ROOT = fileURLToPath(new URL('..', import.meta.url));
 const problems = [];
@@ -17,6 +17,18 @@ const problem = (text) => problems.push(text);
 const catalog = JSON.parse(readFileSync(join(ROOT, 'catalog.json'), 'utf8'));
 if (!Array.isArray(catalog.apps)) problem('catalog.json has no "apps" list');
 const seen = new Set();
+
+// The verified publishers: well formed, and each name and domain once.
+let publishers = [];
+try {
+  publishers = readPublishers(ROOT);
+} catch {
+  problem('publishers.json cannot be read');
+}
+for (const p of publishers) {
+  if (!/^[a-z0-9-]+(\.[a-z0-9-]+)+$/.test(p.domain ?? '') || !p.name || !p.github) problem(`publishers.json: ${p.domain ?? '(no domain)'} needs a domain, a name and a github account`);
+}
+const sameName = (a, b) => String(a).trim().toLowerCase() === String(b).trim().toLowerCase();
 
 for (const a of catalog.apps ?? []) {
   const where = `catalog entry ${a.id ?? '(no id)'}`;
@@ -51,6 +63,10 @@ for (const a of catalog.apps ?? []) {
   for (const key of ['id', 'name', 'version', 'description', 'author', 'category', 'sdk'])
     if (manifest[key] !== a[key]) problem(`${where}: "${key}" differs from the package's manifest`);
   if (manifest.disc?.label !== a.disc) problem(`${where}: "disc" differs from the package's manifest`);
+  // A verified publisher's name is theirs: no app outside their domain may show it as its author.
+  for (const p of publishers)
+    if (a.author && sameName(a.author, p.name) && !isUnder(a.id, p.domain))
+      problem(`${where}: its author is ${p.name}, a verified publisher, but its id is not under ${p.domain}`);
 
   if (a.icon !== undefined) {
     const prefix = `apps/${a.id}/`;

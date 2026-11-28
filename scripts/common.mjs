@@ -1,8 +1,10 @@
 // What publish.mjs and verify.mjs agree on.
 import { execFileSync } from 'node:child_process';
+import { readFileSync } from 'node:fs';
+import { join } from 'node:path';
 
 /** Where approved packages live: the repository's main branch, served raw. */
-/** A reverse domain and a name (net.ludei.checkers), as Kino's agentd checks it. */
+/** A reverse domain and a name (app.webpc.checkers), as WebPC's agentd checks it. */
 export const ID = /^(?=.{1,80}$)[a-z0-9]+(-[a-z0-9]+)*(\.[a-z0-9]+(-[a-z0-9]+)*){2,}$/;
 export const VERSION = /^\d+(\.\d+){0,3}$/;
 export const SDK = /^\d+\.\d+$/;
@@ -22,3 +24,11 @@ export const isNewer = (a, b) => {
 /** One file out of a .app (a zip). unzip reads * ? [ ] in names as patterns: escaped. */
 export const unzip = (pkg, file, encoding = 'utf8') =>
   execFileSync('unzip', ['-p', pkg, file.replace(/([*?[\]])/g, '\\$1')], { encoding, maxBuffer: 64 << 20 });
+
+/** The verified publishers (publishers.json): each a domain whose apps (ids under it, reversed:
+ * webpc.app owns app.webpc.*) show the verified badge, the name shown as their author, and the
+ * GitHub account that answers for it. Kept by WebPC alone (CODEOWNERS). */
+export const readPublishers = (root) => JSON.parse(readFileSync(join(root, 'publishers.json'), 'utf8')).publishers ?? [];
+
+/** Whether `id` is under `domain` (app.webpc.paint is under webpc.app). */
+export const isUnder = (id, domain) => id.startsWith(`${domain.split('.').reverse().join('.')}.`);
